@@ -24,7 +24,7 @@ public class AppRunner implements ApplicationRunner{
 
 
 //        Resource resource = resourceLoader.getResource("text.txt"); 이게 만약 클래스패스에플리케이센컨테스트면 클래스패스로 읽어옴
-        Resource resource = resourceLoader.getResource("text.txt");//접두어로 붙여준다.
+        Resource resource = resourceLoader.getResource("classpath:text.txt");//접두어로 붙여준다.
         //접두어를 사용하는 편이 좋다. 접두어를 붙여주지않으면 서블릿웹애플리케이션으로 나옴
 //        resource = resourceLoader.getResource("file:///text.txt"); 접두어를 붙인다
         System.out.println(resource.getClass());//클래스패스 클래스로 결과가나옴
